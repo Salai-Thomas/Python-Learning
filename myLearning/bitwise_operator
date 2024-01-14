@@ -1,0 +1,10 @@
+# bitwise operator
+
+# bitwise and ==> &
+# bitwise or ==> |
+# bitwise xor ==> ^ (exclusive or)
+# << left shift 
+# >> right shift
+
+# binary number တွေ ပေါ်မှာ operation ပြုလုပ် binary number တွေပြောင်းပြီး operation လုပ်
+
