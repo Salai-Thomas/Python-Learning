@@ -32,3 +32,4 @@ print(book1 == book2) # False # True ပုံမှန် အားဖြင့
 # behaviour ပြောင်းလဲ
 
 # သူရဲ့ orginal behaviour တွေကို ပြောင်းလဲလိုက်ခြင်းကို overloading လုပ်တယ်လို့ခေါ်
+# dir သည် obj ထဲတွင်ရှိသော built in attribute or method and user defied method or attributes တွေကို list အနေနဲ့ ထုတ်ပေး
