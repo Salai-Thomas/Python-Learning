@@ -1,0 +1,59 @@
+#inheritance
+
+#parent or super
+# child or sub class
+
+class FirstClass:
+    data = 'hello'
+    def _setdata(self,data):
+        self.data = data
+
+    def _display(self):
+        print(self.display())
+
+class SecClass(FirstClass):
+    def _secMethod():
+        print('secMethod')
+
+class thirdClass(SecClass):
+    def _thirddisplayFirstData(self):
+        print(self.data)
+
+# class object
+print(FirstClass.data)
+# instance object
+firstObj = FirstClass() # parathesis လေ:နဲ့ run လိုက်တာနဲ့ constructor method ကို လှမ်းခေါ်ပြီး obj တည်ဆောက်ပေး class တည်ဆောက်ခဲ့ဆင်ကမရေးခဲ့လဲ အော်တို ထည့်ပေး
+# class object ကို အသုံး ပြုပြီး instance object တည်ဆောက်
+# တစ်နည်းအားဖြင့် instance object သည် class object ကို inherit ပြုလုပ်ထားခြင်းဖြစ်
+
+thirdObj = thirdClass()
+thirdObj.data = 'world hello'
+thirdObj._thirddisplayFirstData()
+
+# Inherit Search
+""" ပထမဆုံး current obj မှာ ခေါ်ထားတဲ့ method or attribute ရှိမရှိရှာ မရှိရင် inherit လုပ်ထားတဲ့
+parent class မှာရှာ မရှိရင် သူ့ parent မှာရှာ အဆင့်ဆင့်ရှာလို့မှမရှိရင် error
+"""
+
+# Super ဖြင့် parent 's method or attribute များခေါ်ယူ အသုံးပြုခြင်း ဒီကောင်ကပိုပြီးသင့်တော်နိုင်
+class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+    def _display_info(self):
+        print(f"Name is {self.name}; Age is {self.age}")
+
+class Employee(Person):
+    def __init__(self, name, age,employee_id):
+        super().__init__(name, age)
+        self.employee_id = employee_id
+    
+    def _display_info(self):
+        return super()._display_info()
+    
+person_obj = Person('Salai Thomas',21)
+
+person_obj._display_info()
+
+
