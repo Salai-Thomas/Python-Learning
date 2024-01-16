@@ -1,0 +1,14 @@
+# Set Data Type အစု [From Technortal ]
+# Unordered Data Structure
+# We Cannot Access By Index Structure (index နှင့် access မလုပ်နိုင်)
+# dictionary ကဲ့သို့ curly bracket နဲ့ရေးသော လဲ key value structure မဟုတ်
+# set ထဲမှာ immutable data တွေပဲထည့်လို့ရ [string,integer,boolean]
+
+my_set = {'aung','maung'}
+print(type(my_set))
+
+empty_set = set()       # empty set ကို constructor set နဲ့တည်ဆောက် curly bracket ချည်းရေးရင် empty dictionary ဖြစ်
+not_duplicate = {1,2,4,1,2,3,1,2,4,4,3,7,5,5,7}
+
+print(not_duplicate) #{1, 2, 3, 4, 5, 7} [duplicate value တွေကို တစ်ခုပဲဖော်ပြပေး]
+# unorder data structure ဖြစ်သောကြောင့် ထည့်ပေးလိုက်တဲ့ အစဉ်လိုက်အတိုင်းမထုတ်ပေး
