@@ -1,0 +1,25 @@
+#Set Operation [From Technortal]
+
+set_one = set() # empty set [output : set()]
+
+set_one.add(1) #adding နောက်ကနေ ပေးလိုက်တဲ့တန်ဖိုးကိုပေါင်းထည့်
+#set.discard(value) <or> set.remove(value) [removing value]
+
+#union [set နှစ်ခု ပေါင်းခြင်း] circle graph ဖြင့် example ကိုကြည့်နိုင်
+
+set_two = {1, 2, 3, 4}
+set_three = {3, 4, 5, 7, 6}
+union_set = set_two.union(set_three)
+intersetion_set = set_two.intersection(set_three)
+difference_two_three = set_two.difference(set_three)
+difference_three_two = set_three.difference(set_two)
+difference_three_three = set_three.difference(set_three)
+
+print(union_set) #{1, 2, 3, 4, 5, 6, 7} set နှစ်ခုထဲမှ value တွေကိုပေါင်းထည့်ပေး duplicate ဖြစ်တဲ့ကောင်တွေဖြုတ်ချ
+print(intersetion_set) #{3,4} တူညီ တဲ့ကောင်ကိုပြန်ထုတ်ပေး
+
+print(difference_two_three) # {1, 2}နှစ်ခုတထဲက တူတဲ့ value ကို ဖြုတ်ချပေး ပထမ set ထဲက ကျန်ဲ့ကောင်ကိုထုတ်ပေး
+print(difference_three_two) #{5, 6, 7}
+
+print(difference_three_three) #output : set()
+
